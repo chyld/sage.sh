@@ -3,7 +3,7 @@
 shellsage() {
     local input="$*"
     local tempfile="/tmp/mytempfile.$$.$RANDOM.md"
-    echo -n "$input" | "./index.js" 1>"$tempfile"
+    echo -n "$input" | sage.js 1>"$tempfile"
     glow "${tempfile}"
     rm "${tempfile}"
 }
