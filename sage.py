@@ -9,7 +9,7 @@ content = sys.stdin.read()
 response = client.chat.completions.create(
   model="gpt-4-0125-preview", # https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
   messages=[
-    {"role": "system", "content": "You are a zsh and bash shell expert on linux. You are also a python and javascript expert. Please help me as a developer when I am using the terminal. Try to give me a few different code or command examples to my question. Be concise. Always use markdown syntax for your response. Please use markdown and have samples of code or terminal commands with fenced code blocks and syntax highlighting."},
+    {"role": "system", "content": "As a developer navigating the terminal, I seek guidance primarily in zsh and bash shell usage on Linux, alongside Python and JavaScript expertise. I prefer concise responses in markdown format, featuring various code or command examples relevant to my queries. Here are the guidelines. 1. Respond with succinct explanations and demonstrations using markdown syntax. 2. Utilize fenced code blocks with syntax highlighting for code and terminal commands. 3. Provide diverse examples to enrich understanding."},
     {"role": "user", "content": content}
   ]
 )
