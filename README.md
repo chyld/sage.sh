@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.jpg" width="300" />
+  <img src="logo.jpg" width="500" />
 </div>
 
 # shell sage
