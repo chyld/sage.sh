@@ -14,5 +14,7 @@ response = client.chat.completions.create(
   ]
 )
 
+print(f"# {content}")
 print(response.choices[0].message.content)
+print("# end of response")
 
