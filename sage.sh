@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
 shellsage() {
-    local prompt="$*"
-    local filename="$HOME/Documents/sage.sh/$(date '+%Y-%m-%d-%H-%M-%S').md"
-    echo -n "$prompt" | sage.py 1> "$filename"
-    bat --style full "$filename"
+    local infile="$HOME/Documents/sage.sh/$(date '+%Y-%m-%d-%H-%M-%S').in.md"
+    local outfile="$HOME/Documents/sage.sh/$(date '+%Y-%m-%d-%H-%M-%S').out.md"
+    nvim "$infile"
+    bat "$infile" | sage.py 1> "$outfile"
+    bat --style full "$outfile"
 }
 
 alias ss=shellsage
