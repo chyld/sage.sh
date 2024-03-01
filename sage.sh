@@ -11,4 +11,5 @@ shellsage() {
 
 alias ss=shellsage
 alias ssd="cd $HOME/Documents/sage.sh"
+alias ssb="cd $HOME/.bin/sage.sh"
 
