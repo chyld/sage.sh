@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
-import os
+from os.path import dirname, abspath, join
 import sys
 from openai import OpenAI
 
 client = OpenAI()
 prompt = sys.stdin.read()
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-instructions_path = os.path.join(script_dir, 'sage.instructions')
+script_dir = dirname(abspath(__file__))
+instructions_path = join(script_dir, 'sage.instructions')
 with open(instructions_path, 'r') as f:
     instructions = f.read()
 
