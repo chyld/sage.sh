@@ -11,3 +11,9 @@
 3. Add this repo to your `$PATH`
 4. Have `ollama` running on your local network
 5. At the terminal, type `ss how to tar a directory with gzip compression`
+
+### Demonstration
+
+<div>
+  <img src="demo.png" />
+</div>
