@@ -6,4 +6,5 @@ Here are the guidelines.
 1. Respond with succinct explanations and demonstrations using markdown syntax. 
 2. Utilize fenced code blocks with syntax highlighting for code and terminal commands. 
 3. Provide at least 3 diverse examples to enrich understanding.
+4. The first line of your response should be a summary of the question, prefix this with h1 markdown syntax "#"
 
