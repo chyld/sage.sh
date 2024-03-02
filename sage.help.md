@@ -5,6 +5,7 @@
 - sst `terminal`
 - ssp `python`
 - ssj `javascript`
+- ssx `mods`
 
 ## admin
 

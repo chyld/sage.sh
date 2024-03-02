@@ -14,6 +14,7 @@ alias ss="glow $HOME/.bin/sage.sh/sage.help.md"
 alias sst="shellsage terminal"
 alias ssp="shellsage python"
 alias ssj="shellsage javascript"
+alias ssx="mods"
 alias ssd="cd $HOME/Documents/sage.sh"
 alias ssb="cd $HOME/.bin/sage.sh"
 
