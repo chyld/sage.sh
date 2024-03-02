@@ -6,9 +6,10 @@ from openai import OpenAI
 
 client = OpenAI()
 prompt = sys.stdin.read()
+context = sys.argv[1]
 
 script_dir = dirname(abspath(__file__))
-instructions_path = join(script_dir, 'sage.instructions')
+instructions_path = join(script_dir, f"sage.{context}-instructions")
 with open(instructions_path, 'r') as f:
     instructions = f.read()
 
